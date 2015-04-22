@@ -3,6 +3,8 @@ import sys
 import csv
 from sklearn import linear_model
 
+fname = "least_sq"
+
 def main():
     f = open(sys.argv[1], 'rt')
     data_rows = csv.reader(f)
@@ -24,6 +26,7 @@ def main():
     f = open(sys.argv[2], 'rt')
     data_rows = csv.reader(f)
     x_values = []
+    y_values = []
     for i,row in enumerate(data_rows):
         if i == 0:
             continue
@@ -32,15 +35,13 @@ def main():
                 row[j] = float(cell)
         x_values.append(row[2:])
         y_values.append(row[1])
+    f.close()
     results = clf.predict(x_values)
-    diffs = []
-    avg_diff = 0.0
-    for i,v in enumerate(results):
-        results[i] = int(v)
-        diff = abs(results[i] - y_values[i])
-        diffs.append(diff)
-        avg_diff += float(diffs[i])/len(results)
-    print avg_diff
+
+    f = open(fname+"_out.csv", 'w')
+    fwrite = csv.writer(f, delimiter=',')
+    for i,row in enumerate(results):
+        fwrite.writerow([y_values[i],row])
     f.close()
 
 main()
