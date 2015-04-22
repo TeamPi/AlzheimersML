@@ -19,6 +19,7 @@ def main():
                 row[j] = float(cell)
         x_values.append(row[2:])
         y_values.append(row[1])
+
     clf = linear_model.LinearRegression()
     clf.fit(x_values,y_values)
     f.close()
