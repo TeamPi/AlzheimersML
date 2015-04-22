@@ -30,8 +30,8 @@ for i in frange(float(sys.argv[2]),float(sys.argv[3]),float(sys.argv[4])):
 f.close()
 
 # get the best alpha value using a grid seach on the model
-model = linear_model.Ridge()
-grid = grid_search.GridSearchCV(estimator=linear_model.Ridge(), param_grid=dict(alpha=alpha_v))
+model = linear_model.Lasso(max_iter = 100000)
+grid = grid_search.GridSearchCV(estimator=model, param_grid=dict(alpha=alpha_v))
 grid.fit(x_values,y_values)
 # print out and store the best alpha value
 best_alpha = grid.best_estimator_.alpha
