@@ -19,7 +19,7 @@ def main():
                 row[j] = float(cell)
         x_values.append(row[2:])
         y_values.append(row[1])
-    clf = svm.SVR()
+    clf = svm.SVR(C=3.45)
     clf.fit(x_values,y_values)
     f.close()
 

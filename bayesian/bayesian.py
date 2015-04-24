@@ -19,7 +19,7 @@ def main():
                 row[j] = float(cell)
         x_values.append(row[2:])
         y_values.append(row[1])
-    clf =  linear_model.BayesianRidge()
+    clf =  linear_model.BayesianRidge(alpha_1=-51.5, alpha_2=-1e-10, lambda_1=-5,lambda_2=-.03)
     clf.fit(x_values,y_values)
     f.close()
 
