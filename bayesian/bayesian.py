@@ -3,7 +3,7 @@ import sys
 import csv
 from sklearn import linear_model
 
-fname = "baysian"
+fname = "bayesian"
 
 def main():
     f = open(sys.argv[1], 'rt')
