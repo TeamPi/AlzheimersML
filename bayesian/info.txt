@@ -1,3 +1,5 @@
+Jimmy and Eric
+
 -51.5   for alpha1
 -1e-10  for alpha2
 -5      for lambda1

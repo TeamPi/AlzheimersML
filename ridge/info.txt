@@ -1,1 +1,3 @@
 Liam and Connor
+
+alpha = 1554.116

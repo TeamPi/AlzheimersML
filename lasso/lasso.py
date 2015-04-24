@@ -26,7 +26,7 @@ def main():
         y_values.append(row[1])
     
     # assign alpha value
-    best_alpha = float(sys.argv[3])
+    best_alpha = 0.1868
     
     # fit the training data to the ridge model with the alpha value
     clf = linear_model.Lasso(alpha=best_alpha)

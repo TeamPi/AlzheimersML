@@ -1,1 +1,3 @@
 Sam and Jimmy
+
+alpha = 0.1868
