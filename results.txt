@@ -1,0 +1,19 @@
+Bayesian
+Standard deviation: 3.75664684144
+Percentage of estimates within 1 standard deviation: 78.0%
+Percentage of estimates within 2 standard deviations: 94.5%
+
+Lasso
+Standard deviation: 3.70743909872
+Percentage of estimates within 1 standard deviation: 79.0%
+Percentage of estimates within 2 standard deviations: 95.5%
+
+Ridge
+Standard deviation: 3.75558117045
+Percentage of estimates within 1 standard deviation: 78.0%
+Percentage of estimates within 2 standard deviations: 95.0%
+
+SVR
+Standard deviation: 3.7805254167
+Percentage of estimates within 1 standard deviation: 78.5%
+Percentage of estimates within 2 standard deviations: 93.5%
