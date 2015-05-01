@@ -4,16 +4,22 @@ This work aims to define the progression of Alzheimer's disease and explore the 
 (fMRI) images. The dataset is used for constructing a regression model mapping the features extracted from fMRI images to the Mini Mental State Examination (MMSE)
 score.
 
-To run the scripts first pip install the pip_dependencies.pip file to get the required dependencies and then type the following command:
-
-python run.py fMRI_train.csv fMRI_test.csv
+To run the script do the following:
+ - pip install the pip_dependencies.pip file to get the required dependencies
+   you can also install the dependencies manually:
+   - numpy
+   - scikit-learn
+   - scipy
+ - type the following command:
+   ```
+   python run.py fMRI_train.csv fMRI_test.csv
+   ```
 
 The information below was given to us for the assignment:
 
 References
 [1] Gong, Pinghua, Jieping Ye, and Changshui Zhang. "Robust multi-task feature learning." Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2012.
 
-----------------------------
 ----------------------------
 Training sample size : 800
     Training data is in fMRI_train.xlsx. Each row is an example and each column is a feature. The features in each row are used to describe the corresponding example.
@@ -23,17 +29,14 @@ Test sample size : 200
     Test data is in fMRI_test.xlsx.xlsx
 
 ----------------------------
-----------------------------
 Number of features : 285
     These features are normalized so that each feature has a 0 mean and standard deviation of 1.
 
-----------------------------
 ----------------------------
 Labels : MMSE scores
     Labels of each patient (correspondingly their fMRI image) are the real-valued scores.
 
 
-----------------------------
 ----------------------------
 File format:
     For both training and test data files, the first row gives the feature names. The first column gives the example ID which is not a feature, and you should not
