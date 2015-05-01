@@ -2,8 +2,8 @@ import csv
 import sys
 import math
 
-def main():
-	with open(sys.argv[1], 'r') as f:
+def analyze(run_data):
+	with open(run_data, 'r') as f:
 		data = csv.reader(f)
 		lines = list(data)
 	length = float(0)
@@ -25,5 +25,3 @@ def main():
 		if abs(float(row[0])-float(row[1])) <= 2*rmse:
 			count += 1
 	print 'Percentage of estimates within 2 standard deviations: '+str((count/length)*100)+'%'
-
-main()

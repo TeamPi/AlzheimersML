@@ -5,8 +5,8 @@ from sklearn import svm
 
 fname = "svr"
 
-def main():
-    f = open(sys.argv[1], 'rt')
+def svr(train,test):
+    f = open(train, 'rt')
     data_rows = csv.reader(f)
 
     x_values = []
@@ -23,7 +23,7 @@ def main():
     clf.fit(x_values,y_values)
     f.close()
 
-    f = open(sys.argv[2], 'rt')
+    f = open(test, 'rt')
     data_rows = csv.reader(f)
     x_values = []
     y_values = []
@@ -43,5 +43,3 @@ def main():
     for i,row in enumerate(results):
         fwrite.writerow([y_values[i],row])
     f.close()
-
-main()
