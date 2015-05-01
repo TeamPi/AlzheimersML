@@ -4,9 +4,14 @@ This work aims to define the progression of Alzheimer's disease and explore the 
 (fMRI) images. The dataset is used for constructing a regression model mapping the features extracted from fMRI images to the Mini Mental State Examination (MMSE)
 score.
 
+To run the scripts first pip install the pip_dependencies.pip file to get the required dependencies and then type the following command:
+
+python run.py fMRI_train.csv fMRI_test.csv
+
+The information below was given to us for the assignment:
+
 References
 [1] Gong, Pinghua, Jieping Ye, and Changshui Zhang. "Robust multi-task feature learning." Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2012.
-
 
 ----------------------------
 ----------------------------
