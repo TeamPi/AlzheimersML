@@ -12,7 +12,7 @@ def analyze(run_data):
 		length += 1
 		mse_sum += math.pow(float(row[0])-float(row[1]), 2)
 	rmse = math.sqrt(mse_sum/length)
-	print 'Standard deviation: '+str(rmse)
+	print 'Root Mean Squared Error: '+str(rmse)
 	#How many are within 1 standard deviation?
 	count = 0
 	for row in lines:
