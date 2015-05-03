@@ -15,6 +15,11 @@ To run the script do the following:
    python run.py fMRI_train.csv fMRI_test.csv
    ```
 
+To perform analysis on the output, use the following command:
+  ```
+  python analysis.py [name_of_output.csv] [name_of_test]
+  ```
+
 The information below was given to us for the assignment:
 
 References
